@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title> Mario Brawl</title>
+    </head>
+
+    <body style="background-color:#ff866e">
+        <h1> Mario Brawl</h1>
+        <h4 id="welcomeMessage"> Welcome. To play, you must select a character and then click 'Start Game'. After this is done, You will be able to use your attacks and heals. You may only use special attacks every other turn and can not heal more than your maximum health. When you select an ability, you must type a random quote within the time you are given. Enjoy your battle!</h4>
+        <p id="timer"></p>
+        <h3> Choose Music</h3>
+        <p id="music"></p>
+        <p id="countdown" style="float:right">0</p>
+        <button id="btnPreviousSong" type="button" onclick="previousSong();" style="background-color:#3dd440" disabled="true">Previous </button>
+        <button id="btnPlayMusic" type="button" onclick="playMusic();" style="background-color:#3dd440" disabled="true">Play </button>
+        <button id="btnNextSong" type="button" onclick="nextSong();" style="background-color:#3dd440" disabled="true">Next </button>
+        <button id="btnPlayRandom" type="button" onclick="randomSong();" style="background-color:#3dd440" disabled="true">Play Random </button>
+        <p></p>
+        <p id="showQuote" style="float:right"></p>
+        <br>
+        <h3> Select Your Character</h3>
+        <input id="typeQuotes" type="text" style="float:right; background-color: #3dd440" disabled="true" />
+        <label for="typeQuotes" style="float:right">Type Here: </label>
+        <br><br>
+        <p id="typedWords" style="float:right"></p>
+        <br>
+        <img id="picture" height="250" width = "220"style="float:left" hspace="10" />
+        <p id="characterselection"></p>
+        <br /> 
+        <button id="btnPreviousCharacter" type="button" onclick="previousOption();" style="background-color:#3dd440">Previous</button>
+        <button id="btnSelectCharacter" type="button" onclick="selectCharacter();" style="background-color:#3dd440">Select</button>
+        <button id="btnNextCharacter" type="button" onclick="nextOption();" style="background-color:#3dd440">Next</button>
+        <br>
+        <br>
+        <button id="btnRandomCharacter" type="button" onclick="randomOption();" style="background-color:#3dd440">Choose Random Character</button>
+        <p id="selected"></p>
+        <h3 id="endMessage"></h3>
+        <br><br><br><br><br>
+        <button id="btnSimpleAttack" type="button" onclick="simpleAttackPressed();" disabled="true" style="background-color:#3dd440">Normal Attack</button>
+        <button id="btnSpecialAttack" type="button" onclick="specialAttackPressed();" disabled="true" style="background-color:#3dd440">Special Attack</button>
+        <button id="btnHealing" type="button" onclick="healingPressed();" disabled="true" style="background-color:#3dd440">Heal</button>
+        <br><br><br><br>
+        <img id="computerpicture" width="200" style="float:left" hspace="10" />
+        <p id="computerSelect"></p>
+        <br>
+        <button id="btnStartGame" type="button" onclick="beginGame();" disabled="true" style="background-color:#3dd440">Start Game </button>
+        <script src="marioBrawl.js"></script>
+    </body>
+</html>
